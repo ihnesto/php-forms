@@ -2,7 +2,13 @@
 
 //var_dump($_POST);
 
-$username = $_POST['username'];
+
+if (isset($_POST['username']) == true) {
+    $username = $_POST['username'];
+} else {
+    $username = '';
+}
+
 $subject = $_POST['subject'];
 $email = $_POST['email'];
 $message = $_POST['message'];
